@@ -1,0 +1,20 @@
+{
+  "name": "http_anatomy",
+  "version": "1.0.0",
+  "description": "A presentation",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "reveal-md": "2.4.1"
+  },
+  "scripts": {
+    "presentg": "reveal-md -h 0.0.0.0 -t custom pres.md",
+    "present": "reveal-md -t custom pres.md",
+    "print": "reveal-md -t custom -r pres.pdf pres.md",
+    "build": "node-sass theme/custom.scss theme/custom.css",
+    "run": "npm run build && npm run present"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
