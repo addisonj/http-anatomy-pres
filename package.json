@@ -8,9 +8,9 @@
     "reveal-md": "2.4.1"
   },
   "scripts": {
-    "presentg": "reveal-md -h 0.0.0.0 -t custom pres.md",
-    "present": "reveal-md -t custom pres.md",
-    "print": "reveal-md -t custom -r pres.pdf pres.md",
+    "presentg": "reveal-md --host 0.0.0.0 --theme theme/custom.css pres.md",
+    "present": "reveal-md --theme theme/custom.css pres.md",
+    "print": "npm run build && reveal-md --theme theme/custom.css pres.md --print pres.pdf",
     "build": "node-sass theme/custom.scss theme/custom.css",
     "run": "npm run build && npm run present"
   },

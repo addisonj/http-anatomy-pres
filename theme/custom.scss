@@ -67,5 +67,22 @@ h1.mainTitle,
 h2.mainTitle {
   -webkit-text-stroke-color: $base00;
   -webkit-text-stroke-width: 1.5px;
-
 }
+
+p.small {
+  font-size: 0.7em;
+}
+p.lefty {
+  text-align: left;
+}
+code.small {
+  font-size: 0.7em;
+}
+
+// custom highlights
+.reveal .slides section .fragment.hl-comment {
+  opacity: 1;
+  visibility: inherit; }
+
+.reveal .slides section .fragment.hl-comment.visible {
+  color: #ff2c2d; }
